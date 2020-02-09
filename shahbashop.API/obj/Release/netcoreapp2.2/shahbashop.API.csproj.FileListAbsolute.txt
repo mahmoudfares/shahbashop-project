@@ -1,0 +1,16 @@
+D:\shahbashop\shahbashop.API\bin\Release\netcoreapp2.2\appsettings.Development.json
+D:\shahbashop\shahbashop.API\bin\Release\netcoreapp2.2\appsettings.json
+D:\shahbashop\shahbashop.API\bin\Release\netcoreapp2.2\Properties\launchSettings.json
+D:\shahbashop\shahbashop.API\bin\Release\netcoreapp2.2\shahbashop.API.deps.json
+D:\shahbashop\shahbashop.API\bin\Release\netcoreapp2.2\shahbashop.API.runtimeconfig.json
+D:\shahbashop\shahbashop.API\bin\Release\netcoreapp2.2\shahbashop.API.runtimeconfig.dev.json
+D:\shahbashop\shahbashop.API\bin\Release\netcoreapp2.2\shahbashop.API.dll
+D:\shahbashop\shahbashop.API\bin\Release\netcoreapp2.2\shahbashop.API.pdb
+D:\shahbashop\shahbashop.API\obj\Release\netcoreapp2.2\shahbashop.API.csprojAssemblyReference.cache
+D:\shahbashop\shahbashop.API\obj\Release\netcoreapp2.2\shahbashop.API.RazorAssemblyInfo.cache
+D:\shahbashop\shahbashop.API\obj\Release\netcoreapp2.2\shahbashop.API.RazorAssemblyInfo.cs
+D:\shahbashop\shahbashop.API\obj\Release\netcoreapp2.2\shahbashop.API.AssemblyInfoInputs.cache
+D:\shahbashop\shahbashop.API\obj\Release\netcoreapp2.2\shahbashop.API.AssemblyInfo.cs
+D:\shahbashop\shahbashop.API\obj\Release\netcoreapp2.2\shahbashop.API.RazorTargetAssemblyInfo.cache
+D:\shahbashop\shahbashop.API\obj\Release\netcoreapp2.2\shahbashop.API.dll
+D:\shahbashop\shahbashop.API\obj\Release\netcoreapp2.2\shahbashop.API.pdb
