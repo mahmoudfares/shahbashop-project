@@ -1,0 +1,22 @@
+.container-fluid{
+    margin-top: 10px;
+}
+
+.notification-icon{
+    font-size: 20px;
+}
+.notification-warning:before {
+    content: "" !important;
+}
+
+.notification-success:before{
+    content: "" !important;
+}
+
+.notification-danger:before{
+    content: "" !important;
+}
+
+.notification-info:before{
+    content: "" !important;
+}

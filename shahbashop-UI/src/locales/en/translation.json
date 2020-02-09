@@ -1,0 +1,9 @@
+{
+    "Welcome": "Welcome to Shahbashop",
+    "changeLanguageModal" : {
+        "policyAccordText": "We use cookies to improve our services. By clicking on accord button, you agree to save this information within your device"
+    },
+    "shared": {
+        "accord": "Accord"
+    }
+}
