@@ -1,12 +1,12 @@
 import React from "react";
 import { Redirect, Route } from "react-router-dom";
-import { checkCookie } from "../../utils/cookies";
+import { checkToken } from "../../utils/cookies";
 
 const AdminPrivateRoute = ({ component: Component, ...rest }) => (
   <Route
     {...rest}
     render={props =>
-      checkCookie() !== null ? (
+      checkToken() !== null ? (
         <Component {...props} />
       ) : (
         <Redirect

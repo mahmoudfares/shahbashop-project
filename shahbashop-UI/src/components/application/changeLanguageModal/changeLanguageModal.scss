@@ -9,6 +9,18 @@
         width: 20%;
     }
     .language-text{
-        border: 1px solid black;
+        margin: 5px 10px;
+        width: 100%;
     }
+    .chosen{
+        background-color: #fdc513;
+        color:"white"
+    }
+}
+.policy{
+    margin-top: 10px;
+}
+.arabic{
+    text-align: right;
+    direction: rtl;
 }

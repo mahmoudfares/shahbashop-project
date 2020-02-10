@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "D:\\shahbashop\\shahbashop.API\\shahbashop.API.csproj",
+    "projectUniqueName": "D:\\shahbashop\\shahbashop-project\\shahbashop.API\\shahbashop.API.csproj",
     "projectName": "shahbashop.API",
-    "projectPath": "D:\\shahbashop\\shahbashop.API\\shahbashop.API.csproj",
-    "outputPath": "D:\\shahbashop\\shahbashop.API\\obj\\",
+    "projectPath": "D:\\shahbashop\\shahbashop-project\\shahbashop.API\\shahbashop.API.csproj",
+    "outputPath": "D:\\shahbashop\\shahbashop-project\\shahbashop.API\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "C:\\Microsoft\\Xamarin\\NuGet",

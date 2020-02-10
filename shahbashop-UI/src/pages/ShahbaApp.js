@@ -64,7 +64,6 @@ export class ShahbaApp extends Component {
   }
   
   render() {
-    const { t } = this.props;
     this.addAmountIfNeeded();
     return (
       <div className="container">

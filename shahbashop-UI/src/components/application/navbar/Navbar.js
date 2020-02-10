@@ -6,17 +6,17 @@ import {connect} from "react-redux";
 import { useTranslation } from "react-i18next";
 
 function Navbar(props){
-  const { t, i18n } = useTranslation();
+  const {t} = useTranslation();
     return(
       <nav className="navbar navbar-expand-lg navbar-light">
-    <NavLink className="navbar-brand" to="/">{t('main.sub')}</NavLink>
+    <NavLink className="navbar-brand" to="/">ShahbaShop</NavLink>
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarText">
     <ul className="navbar-nav mr-auto">
     <li className="nav-item">
-    <NavLink className="nav-link" activeClassName="current-nav" exact={true} to="/">Home</NavLink>
+    <NavLink className="nav-link" activeClassName="current-nav" exact={true} to="/">{t('navbar.home')}</NavLink>
     </li>
     <li className="nav-item">
     <NavLink className="nav-link" to="#">Features</NavLink>

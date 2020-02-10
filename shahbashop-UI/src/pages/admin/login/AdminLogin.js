@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import Login from "../../../components/admin/Login";
 import AuthService from "../../../services/AuthService";
-import { setCookie } from "../../../utils/cookies";
+import { setToken } from "../../../utils/cookies";
 import {Redirect} from "react-router-dom";
 import "./adminLogin.scss";
 
@@ -22,7 +22,7 @@ class AdminLogin extends Component {
       .login(data.email, data.password)
       .then(res => {
         this.setState({ redirect: true });
-        setCookie(res.data.token);
+        setToken(res.data.token);
       })
       .catch(err => console.log(err));
   };
