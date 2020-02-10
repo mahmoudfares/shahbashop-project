@@ -10,7 +10,8 @@ export default function(state = [], action) {
       if(newState[indexOfExistingItem].amount === 1){
         newState = newState.filter(item => item.id !== action.payload.id);
       }else{
-        newState[indexOfExistingItem].amount--; 
+        newState[indexOfExistingItem].amount--;
+        newState[indexOfExistingItem].totalPrice -= newState[indexOfExistingItem].price; 
       }
       state = [...newState];
       saveState(state);
@@ -20,8 +21,10 @@ export default function(state = [], action) {
       indexOfExistingItem = getIndexOfExistingItem(newState,action.payload.id);
       if(indexOfExistingItem !== -1){
           newState[indexOfExistingItem].amount++;        
+          newState[indexOfExistingItem].totalPrice = newState[indexOfExistingItem].amount * newState[indexOfExistingItem].price;        
       }else{
         action.payload.amount = 1;
+        action.payload.totalPrice = Number(action.payload.price);
         newState.push(action.payload);
       }
       state = [...newState];

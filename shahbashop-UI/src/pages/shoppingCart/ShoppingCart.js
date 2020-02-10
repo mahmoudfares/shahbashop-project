@@ -7,6 +7,8 @@ import { Alert } from 'reactstrap';
 import { store } from 'react-notifications-component';
 import {options} from "../../helpers/notificationOptions";
 import {FaSadTear, FaSmile, FaInfoCircle} from "react-icons/fa";
+import compose from 'compose-function';
+import { withTranslation  } from 'react-i18next';
 
 class ShoppingCart extends React.Component {
 
@@ -39,16 +41,20 @@ class ShoppingCart extends React.Component {
   }
 
   render(){
+    const {t} = this.props;
       return (
         <>
-          {/* <NotificationContainer /> */}
             <div className="col-lg-2" />
             <div className="col-lg-8 col-sm-11 container">
-              <div className="row" style={{"maxWidth": "98%", margin: "10px auto"}}>
-              {this.props.shoppingCart.length === 0 ? <Alert className="col-sm-12" color="info" fade={true}>Your shopping cart is empty</Alert> : ""}
-
-              {this.props.shoppingCart.map(product => <Product remove={this.removeFromShoppingCart} add={this.addToShoppingCart} skipMaxLimit={this.skipMaxLimit} type="list" key={product.id} product={product}>{product.name}</Product>)}
+              <h1 className="">{t("shoppingCart.name")}</h1>
+              <div className="row list-group" style={{"maxWidth": "98%", margin: "10px auto"}}>
+              {this.props.shoppingCart.length === 0 ? 
+                <Alert className="col-sm-12" color="info" fade={true}>Your shopping cart is empty</Alert> : 
+                this.props.shoppingCart.map(product => <Product remove={this.removeFromShoppingCart} add={this.addToShoppingCart} skipMaxLimit={this.skipMaxLimit} type="list" key={product.id} product={product}>{product.name}</Product>
+                )
+              }
               </div>
+              <button className="btn btn-success float-right">{t("shoppingCart.order")}</button>
             </div>
             <div className="col-lg-2" />
           </>
@@ -62,4 +68,4 @@ class ShoppingCart extends React.Component {
 
   const mapDispatchToProps = (dispatch) => bindActionCreators({addItem, deleteItem}, dispatch);
   
-  export default connect(mapStateToProps, mapDispatchToProps)(ShoppingCart);
+  export default compose(withTranslation() ,connect(mapStateToProps, mapDispatchToProps))(ShoppingCart);

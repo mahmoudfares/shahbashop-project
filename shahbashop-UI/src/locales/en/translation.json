@@ -8,5 +8,11 @@
     },
     "navbar": {
         "home": "Home"
+    },
+    "shoppingCart":{
+        "name": "Shopping Cart",
+        "amount": "amount",
+        "items": "item(s)",
+        "order": "Order"
     }
 }

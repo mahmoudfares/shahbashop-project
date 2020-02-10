@@ -2,8 +2,10 @@ import React, {useState} from "react";
 import {FaPlus, FaMinus} from "react-icons/fa";
 import "./product.scss";
 import {NavLink} from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Product = (props) => {
+    const {t} = useTranslation();
     const {product, skipMaxLimit, add, remove, type} = props;
 
     const initialTotalOrdered = () => {
@@ -45,21 +47,33 @@ const Product = (props) => {
         let priceCents = props.price.slice(pointIndex +1);
         return <span>{priceEuros}<sup>{priceCents}</sup></span>
     }
-    const choseTypeClass = () => type === "list" ? "list-item" : "product-card";
-
+    const choseTypeClass = () => type === "list" ? "list-item list-group-item" : "product-card";
     return (
     <div className={choseTypeClass()}>
-        <NavLink to={`/products/${product.id}`}>
-            <img alt={mainImage.id} src={mainImage.url}></img>
-        </NavLink>
-        <div className="product-information">
-        <h6>{product.name}</h6>
-        <div className="price"><PriceWithCents price={product.price}></PriceWithCents></div>
+        <div className="image-container ">
+            <NavLink to={`/products/${product.id}`}>
+                <img alt={mainImage.id} src={mainImage.url}></img>
+            </NavLink>
         </div>
-        <div className="order-operating-container" >
-            <button className="button decrease" onClick={decreaseOrderAmount}><FaMinus></FaMinus></button>
+        <div className="product-information">
+            <h6>{product.name}</h6>
+            <div className="price">
+                {type === "list" 
+                    ? 
+                    <p className="total-price">
+                        {product.amount} {t("shoppingCart.items")} X 
+                        <PriceWithCents price={product.price}></PriceWithCents> = 
+                        <PriceWithCents price={`${product.totalPrice.toFixed(2)}`}></PriceWithCents>
+                    </p> 
+                    : 
+                    <PriceWithCents price={product.price}></PriceWithCents>
+                }
+            </div>
+        </div>
+        <div className={type === "list" ? "align-self-center order-operating-container" : "order-operating-container"} >
+            <button className="button" id="decrease" onClick={decreaseOrderAmount}><FaMinus></FaMinus></button>
             <p className="total-ordered">{totalOrdered}</p>
-            <button className="button increase" onClick={increaseOrderAmount}><FaPlus></FaPlus></button>
+            <button className="button" id="increase" onClick={increaseOrderAmount}><FaPlus></FaPlus></button>
         </div>
     </div>    
     )
