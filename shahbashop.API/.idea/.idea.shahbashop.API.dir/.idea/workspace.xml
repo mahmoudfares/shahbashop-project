@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b66d1a22-747f-4a36-a3fa-2eb2b8927770" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../shahbashop-UI/src/pages/shoppingCart/ShoppingCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/../shahbashop-UI/src/pages/shoppingCart/ShoppingCart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.shahbashop.API.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.shahbashop.API.dir/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.shahbashop.API.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.shahbashop.API.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/shahbashop.API.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/shahbashop.API.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/shahbashop.API.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/shahbashop.API.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/shahbashop.API.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/shahbashop.API.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/shahbashop.API.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/shahbashop.API.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/shahbashop.API.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/shahbashop.API.csproj.nuget.g.props" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,49 +22,49 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Data/DataContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Controllers/ImagesController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Controllers/ProductsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Helpers/CloudinarySettings.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Helpers/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/Enums/Language.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0366DF96-A306-4DFB-8E8E-8F21BCA68142/20/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/Enums/OrderStatus.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/Enums/Country.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/Enums/CategoryType.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/57139BFC-E1DA-4913-8884-2BBBF31D74D3/29B/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/Address.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Startup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/appsettings.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/57139BFC-E1DA-4913-8884-2BBBF31D74D3/184/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Helpers/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/Product.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/Category.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/57139BFC-E1DA-4913-8884-2BBBF31D74D3/30C/AsyncMethodBuilder.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/obj/project.packagespec.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Controllers/CategoriesController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Controllers/AuthController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/User.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/Category.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/Image.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/Order.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/IAuthRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/AuthRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/IShahbaShopRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/DataContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Data/ShahbaShopRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0366DF96-A306-4DFB-8E8E-8F21BCA68142/20/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/obj/project.packagespec.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/57139BFC-E1DA-4913-8884-2BBBF31D74D3/29B/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/Enums/OrderStatus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/Enums/Language.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/Enums/CategoryType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/Enums/Country.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/57139BFC-E1DA-4913-8884-2BBBF31D74D3/184/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/JSONS/Responses/CategoryResponse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/JSONS/Responses/ProductResponse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/57139BFC-E1DA-4913-8884-2BBBF31D74D3/30C/AsyncMethodBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/JSONS/Responses/ProductImageResponse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/JSONS/Responses/UserResponse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/JSONS/Requests/LoginRequest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/JSONS/Requests/RegisterRequest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/JSONS/Requests/ProductRequest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/JSONS/Requests/ProductImageRequest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/221FA654-76FD-4A6A-A7BE-C2CD9B5A08D9/1/ConfigurationExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/57139BFC-E1DA-4913-8884-2BBBF31D74D3/195/TaskContinuation.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/Order.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/Image.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/JSONS/Responses/ProductResponse.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/JSONS/Responses/CategoryResponse.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/JSONS/Responses/UserResponse.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/JSONS/Responses/ProductImageResponse.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/JSONS/Requests/RegisterRequest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/JSONS/Requests/LoginRequest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/JSONS/Requests/ProductImageRequest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Controllers/UsersController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/JSONS/Requests/ProductRequest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/JSONS/Requests/CategoryRequest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data/IAuthRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data/IShahbaShopRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data/AuthRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Data/ShahbaShopRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Controllers/CategoriesController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Controllers/ProductsController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Controllers/UsersController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Controllers/AuthController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Controllers/ImagesController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -208,7 +217,9 @@
       <workItem from="1581015816024" duration="412000" />
       <workItem from="1581267433299" duration="610000" />
       <workItem from="1581270864419" duration="1480000" />
-      <workItem from="1581357450559" duration="621000" />
+      <workItem from="1581357450559" duration="1221000" />
+      <workItem from="1582630847330" duration="704000" />
+      <workItem from="1582631630255" duration="276000" />
     </task>
     <servers />
   </component>
@@ -226,30 +237,34 @@
       <screen x="0" y="0" width="1739" height="939" />
     </state>
     <state x="325" y="126" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1739.939/1920.0.1739.939@0.0.1739.939" timestamp="1578840974547" />
+    <state x="863" y="78" width="698" height="763" key="#shahbashop.API" timestamp="1582631898320">
+      <screen x="0" y="0" width="1739" height="939" />
+    </state>
+    <state x="863" y="78" width="698" height="763" key="#shahbashop.API/0.0.1739.939@0.0.1739.939" timestamp="1582631898320" />
     <state width="464" height="466" key="DebuggerActiveHint" timestamp="1579956157038">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
     <state width="464" height="466" key="DebuggerActiveHint/0.0.1739.939/1920.0.1739.939@0.0.1739.939" timestamp="1579956157038" />
     <state width="475" height="466" key="DebuggerActiveHint/0.0.1739.939/1920.0.1739.939@1920.0.1739.939" timestamp="1579722904479" />
-    <state width="1696" height="279" key="GridCell.Tab.0.bottom" timestamp="1581279528152">
-      <screen x="1920" y="0" width="1739" height="939" />
+    <state width="1696" height="279" key="GridCell.Tab.0.bottom" timestamp="1581370251022">
+      <screen x="0" y="0" width="1739" height="939" />
     </state>
-    <state width="1696" height="279" key="GridCell.Tab.0.bottom/0.0.1739.939/1920.0.1739.939@0.0.1739.939" timestamp="1580760876633" />
+    <state width="1696" height="279" key="GridCell.Tab.0.bottom/0.0.1739.939/1920.0.1739.939@0.0.1739.939" timestamp="1581370251022" />
     <state width="1696" height="279" key="GridCell.Tab.0.bottom/0.0.1739.939/1920.0.1739.939@1920.0.1739.939" timestamp="1581279528152" />
-    <state width="1696" height="279" key="GridCell.Tab.0.center" timestamp="1581279528151">
-      <screen x="1920" y="0" width="1739" height="939" />
+    <state width="1696" height="279" key="GridCell.Tab.0.center" timestamp="1581370251022">
+      <screen x="0" y="0" width="1739" height="939" />
     </state>
-    <state width="1696" height="279" key="GridCell.Tab.0.center/0.0.1739.939/1920.0.1739.939@0.0.1739.939" timestamp="1580760876633" />
+    <state width="1696" height="279" key="GridCell.Tab.0.center/0.0.1739.939/1920.0.1739.939@0.0.1739.939" timestamp="1581370251022" />
     <state width="1696" height="279" key="GridCell.Tab.0.center/0.0.1739.939/1920.0.1739.939@1920.0.1739.939" timestamp="1581279528151" />
-    <state width="1696" height="279" key="GridCell.Tab.0.left" timestamp="1581279528151">
-      <screen x="1920" y="0" width="1739" height="939" />
+    <state width="1696" height="279" key="GridCell.Tab.0.left" timestamp="1581370251022">
+      <screen x="0" y="0" width="1739" height="939" />
     </state>
-    <state width="1696" height="279" key="GridCell.Tab.0.left/0.0.1739.939/1920.0.1739.939@0.0.1739.939" timestamp="1580760876633" />
+    <state width="1696" height="279" key="GridCell.Tab.0.left/0.0.1739.939/1920.0.1739.939@0.0.1739.939" timestamp="1581370251022" />
     <state width="1696" height="279" key="GridCell.Tab.0.left/0.0.1739.939/1920.0.1739.939@1920.0.1739.939" timestamp="1581279528151" />
-    <state width="1696" height="279" key="GridCell.Tab.0.right" timestamp="1581279528151">
-      <screen x="1920" y="0" width="1739" height="939" />
+    <state width="1696" height="279" key="GridCell.Tab.0.right" timestamp="1581370251022">
+      <screen x="0" y="0" width="1739" height="939" />
     </state>
-    <state width="1696" height="279" key="GridCell.Tab.0.right/0.0.1739.939/1920.0.1739.939@0.0.1739.939" timestamp="1580760876633" />
+    <state width="1696" height="279" key="GridCell.Tab.0.right/0.0.1739.939/1920.0.1739.939@0.0.1739.939" timestamp="1581370251022" />
     <state width="1696" height="279" key="GridCell.Tab.0.right/0.0.1739.939/1920.0.1739.939@1920.0.1739.939" timestamp="1581279528151" />
     <state width="1696" height="245" key="GridCell.Tab.1.bottom" timestamp="1580064242769">
       <screen x="0" y="0" width="1739" height="939" />

@@ -54,7 +54,12 @@ class ShoppingCart extends React.Component {
                 )
               }
               </div>
-              <button className="btn btn-success float-right">{t("shoppingCart.order")}</button>
+              {
+                this.props.shoppingCart.length > 0 
+                ? 
+                <button className="btn btn-success float-right">{t("shoppingCart.order")}</button> 
+                : ""
+              }
             </div>
             <div className="col-lg-2" />
           </>

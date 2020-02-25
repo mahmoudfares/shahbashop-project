@@ -30,3 +30,19 @@ D:\shahbashop\shahbashop-project\shahbashop.API\obj\Debug\netcoreapp2.2\shahbash
 D:\shahbashop\shahbashop-project\shahbashop.API\obj\Debug\netcoreapp2.2\shahbashop.API.RazorTargetAssemblyInfo.cache
 D:\shahbashop\shahbashop-project\shahbashop.API\obj\Debug\netcoreapp2.2\shahbashop.API.dll
 D:\shahbashop\shahbashop-project\shahbashop.API\obj\Debug\netcoreapp2.2\shahbashop.API.pdb
+D:\Side projects\shahbashop\shahbashop-project\shahbashop.API\bin\Debug\netcoreapp2.2\appsettings.Development.json
+D:\Side projects\shahbashop\shahbashop-project\shahbashop.API\bin\Debug\netcoreapp2.2\appsettings.json
+D:\Side projects\shahbashop\shahbashop-project\shahbashop.API\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+D:\Side projects\shahbashop\shahbashop-project\shahbashop.API\bin\Debug\netcoreapp2.2\shahbashop.API.deps.json
+D:\Side projects\shahbashop\shahbashop-project\shahbashop.API\bin\Debug\netcoreapp2.2\shahbashop.API.runtimeconfig.json
+D:\Side projects\shahbashop\shahbashop-project\shahbashop.API\bin\Debug\netcoreapp2.2\shahbashop.API.runtimeconfig.dev.json
+D:\Side projects\shahbashop\shahbashop-project\shahbashop.API\bin\Debug\netcoreapp2.2\shahbashop.API.dll
+D:\Side projects\shahbashop\shahbashop-project\shahbashop.API\bin\Debug\netcoreapp2.2\shahbashop.API.pdb
+D:\Side projects\shahbashop\shahbashop-project\shahbashop.API\obj\Debug\netcoreapp2.2\shahbashop.API.csprojAssemblyReference.cache
+D:\Side projects\shahbashop\shahbashop-project\shahbashop.API\obj\Debug\netcoreapp2.2\shahbashop.API.RazorAssemblyInfo.cache
+D:\Side projects\shahbashop\shahbashop-project\shahbashop.API\obj\Debug\netcoreapp2.2\shahbashop.API.RazorAssemblyInfo.cs
+D:\Side projects\shahbashop\shahbashop-project\shahbashop.API\obj\Debug\netcoreapp2.2\shahbashop.API.AssemblyInfoInputs.cache
+D:\Side projects\shahbashop\shahbashop-project\shahbashop.API\obj\Debug\netcoreapp2.2\shahbashop.API.AssemblyInfo.cs
+D:\Side projects\shahbashop\shahbashop-project\shahbashop.API\obj\Debug\netcoreapp2.2\shahbashop.API.RazorTargetAssemblyInfo.cache
+D:\Side projects\shahbashop\shahbashop-project\shahbashop.API\obj\Debug\netcoreapp2.2\shahbashop.API.dll
+D:\Side projects\shahbashop\shahbashop-project\shahbashop.API\obj\Debug\netcoreapp2.2\shahbashop.API.pdb
