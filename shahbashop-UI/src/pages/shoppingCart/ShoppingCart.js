@@ -9,6 +9,8 @@ import {options} from "../../helpers/notificationOptions";
 import {FaSadTear, FaSmile, FaInfoCircle} from "react-icons/fa";
 import compose from 'compose-function';
 import { withTranslation  } from 'react-i18next';
+import PriceWithCents from "../../components/application/priceWithCents/PriceWithCents";
+
 
 class ShoppingCart extends React.Component {
 
@@ -40,6 +42,14 @@ class ShoppingCart extends React.Component {
     this.props.deleteItem(product);
   }
 
+  totalPrice = () => {
+    let toReturnPrice = 0;
+    this.props.shoppingCart.forEach(element => {
+      toReturnPrice += element.totalPrice
+    });
+    return toReturnPrice;
+  }
+
   render(){
     const {t} = this.props;
       return (
@@ -53,6 +63,7 @@ class ShoppingCart extends React.Component {
                 this.props.shoppingCart.map(product => <Product remove={this.removeFromShoppingCart} add={this.addToShoppingCart} skipMaxLimit={this.skipMaxLimit} type="list" key={product.id} product={product}>{product.name}</Product>
                 )
               }
+              <p>{t("shoppingCart.totalPrice")}: <PriceWithCents price={this.totalPrice().toFixed(2)}></PriceWithCents></p>
               </div>
               {
                 this.props.shoppingCart.length > 0 

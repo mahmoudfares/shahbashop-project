@@ -3,6 +3,7 @@ import {FaPlus, FaMinus} from "react-icons/fa";
 import "./product.scss";
 import {NavLink} from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import PriceWithCents from "../priceWithCents/PriceWithCents"
 
 const Product = (props) => {
     const {t} = useTranslation();
@@ -32,21 +33,13 @@ const Product = (props) => {
 
 
     const decreaseOrderAmount = () => {
-        if(totalOrdered > 0) {
-        setTotalOrdered(totalOrdered -1);
-        remove(product);
-    }}
 
-    const PriceWithCents = (props) => {
-        let pointIndex = props.price.indexOf(".");
-        
-        if(pointIndex === -1)
-            return  <span>{props.price}</span>
-
-        let priceEuros = props.price.slice(0, pointIndex);
-        let priceCents = props.price.slice(pointIndex +1);
-        return <span>{priceEuros}<sup>{priceCents}</sup></span>
+        if (totalOrdered > 0) {
+            setTotalOrdered(totalOrdered - 1);
+            remove(product);
+        }
     }
+
     const choseTypeClass = () => type === "list" ? "list-item list-group-item" : "product-card";
     return (
     <div className={choseTypeClass()}>

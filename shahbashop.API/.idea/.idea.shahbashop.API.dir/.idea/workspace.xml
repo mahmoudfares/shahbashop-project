@@ -3,15 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b66d1a22-747f-4a36-a3fa-2eb2b8927770" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../shahbashop-UI/src/pages/shoppingCart/ShoppingCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/../shahbashop-UI/src/pages/shoppingCart/ShoppingCart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.shahbashop.API.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.shahbashop.API.dir/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.shahbashop.API.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.shahbashop.API.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/shahbashop.API.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/shahbashop.API.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/shahbashop.API.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/shahbashop.API.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/shahbashop.API.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/shahbashop.API.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/shahbashop.API.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/shahbashop.API.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/shahbashop.API.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/shahbashop.API.csproj.nuget.g.props" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,6 +212,7 @@
       <workItem from="1581357450559" duration="1221000" />
       <workItem from="1582630847330" duration="704000" />
       <workItem from="1582631630255" duration="276000" />
+      <workItem from="1582631925000" duration="1354000" />
     </task>
     <servers />
   </component>
