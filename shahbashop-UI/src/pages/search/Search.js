@@ -5,17 +5,18 @@ import {getCategoriesAction} from "../../actions/categoryAction";
 import {addItem, deleteItem} from "../../actions/shoppingCartAction";
 import {bindActionCreators} from "redux";
 import Product from "../../components/application/product/Product";
-import "./categoryProducts.scss";
+import "./search.scss";
 import { store } from 'react-notifications-component';
 import {options} from "../../helpers/notificationOptions";
-import {FaSadTear, FaSmile, FaInfoCircle} from "react-icons/fa";
+import { FaSadTear, FaSmile, FaInfoCircle } from "react-icons/fa";
+import queryString from "query-string";
 
 export class CategoryProducts extends Component {
 
   componentDidMount() {
-    var {id} = this.props.match.params;
+    var queryValues = queryString.parse(this.props.location.search);
 
-    this.props.getProductsPerCategoryAction(id);
+    this.props.getProductsPerCategoryAction(queryValues.categoryId);
     this.props.getCategoriesAction();
     this.addAmountIfNeeded();
   }

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using shahbashop.API.Data;
+using shahbashop.API.Helpers;
 using shahbashop.API.Jsons.Requests;
 using shahbashop.API.Jsons.Responses;
 using shahbashop.API.Models;
@@ -24,14 +25,15 @@ namespace shahbashop.API.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetProducts()
+        public async Task<IActionResult> GetProducts([FromQuery]UserParams userParams)
         {
-            var products = await _repository.GetProducts();
+            var products = await _repository.GetProducts(userParams);
             var productsToReturn = new List<ProductResponse>();
             foreach (var product in products)
             {
                 productsToReturn.Add(ToProductResponse(product));
             }
+            Response.addPagination(products.CurrentPage, products.TotalCount, products.TotalPages);
             return Ok(productsToReturn);
         }
         
@@ -71,7 +73,7 @@ namespace shahbashop.API.Controllers
                     Name = product.Category.Name,
                 },
                 Name = product.Name,
-                Price = product.Price,
+                Price = $"{product.Price:0.00}",
                 MaxToOrder = product.MaxToOrder != null ? product.MaxToOrder : product.Amount,
                 Images = ToListProductImageResponse(product.Images)
             };

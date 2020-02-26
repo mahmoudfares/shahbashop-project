@@ -1,27 +1,30 @@
 import actionTypes from "./types";
 import {getProducts, postProduct, removeProduct, editProduct, getProductsPerCategory} from "../services/productServices";
 
-export function fetchProducts(){
+export function fetchProducts(queryParams) {
     return(dispatch) => 
-        getProducts()
-        .then(res=>dispatch(
+        getProducts(queryParams)
+            .then(res => {
+                return dispatch(
             {
                 type: actionTypes.GET_PRODUCTS,
                 payload: res.data,
+                pagination: JSON.parse(res.headers["pagination"])
             }
-        ))
+        )})
         .catch(err=>console.log(err));
 }
 
-export function getProductsPerCategoryAction(categoryId){
-    return(dispatch) => 
-    getProductsPerCategory(categoryId)
-        .then(res=>dispatch(
-            {
-                type: actionTypes.GET_PRODUCTS,
-                payload: res.data,
-            }
-        ))
+export function getProductsPerCategoryAction(categoryId) {
+    return (dispatch) =>
+        getProductsPerCategory(categoryId)
+            .then(res => dispatch(
+                    {
+                        type: actionTypes.GET_PRODUCTS,
+                        payload: res.data,
+                    }
+                )
+            )
         .catch(err=>console.log(err));
 
 }

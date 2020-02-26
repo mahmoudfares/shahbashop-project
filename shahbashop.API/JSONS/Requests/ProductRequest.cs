@@ -9,7 +9,7 @@ namespace shahbashop.API.Jsons.Requests
         
         [Required]
         public Guid CategoryId { get; set; }
-        public string Price { get; set; }
+        public decimal Price { get; set; }
     }
 
 }

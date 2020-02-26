@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using shahbashop.API.Helpers;
 using shahbashop.API.Models;
 
 namespace shahbashop.API.Data
@@ -14,7 +15,7 @@ namespace shahbashop.API.Data
         Task<IEnumerable<Category>> GetCategories();
         Task<Category> GetCategory(Guid id);
         
-        Task<IEnumerable<Product>> GetProducts();
+        Task<PagedList<Product>> GetProducts(UserParams userParams);
         
         Task<IEnumerable<Product>> GetProductsPerCategory(Guid categoryId);
 

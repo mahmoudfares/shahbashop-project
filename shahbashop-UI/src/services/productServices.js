@@ -1,7 +1,8 @@
 import axios from "axios";
 
-export function getProducts(){
-  let url = "/products";
+export function getProducts(queryParams) {
+  let queryString = Object.keys(queryParams).map(key => key + "=" + queryParams[key]).join("&");
+  let url = `/products?${queryString}`;
   return axios.get(url);
 }
 

@@ -3,7 +3,7 @@ import {FaPlus, FaMinus} from "react-icons/fa";
 import "./product.scss";
 import {NavLink} from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import PriceWithCents from "../priceWithCents/PriceWithCents"
+import PriceWithCents from "../priceWithCents/PriceWithCents";
 
 const Product = (props) => {
     const {t} = useTranslation();
@@ -44,8 +44,8 @@ const Product = (props) => {
     return (
     <div className={choseTypeClass()}>
         <div className="image-container ">
-            <NavLink to={`/products/${product.id}`}>
-                <img alt={mainImage.id} src={mainImage.url}></img>
+                <NavLink to={`/products/${product.id}`}>
+                    {mainImage? <img alt={mainImage.id} src={mainImage.url}></img> : ""}
             </NavLink>
         </div>
         <div className="product-information">

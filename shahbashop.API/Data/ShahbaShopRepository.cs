@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using shahbashop.API.Helpers;
 using shahbashop.API.Models;
 using shahbashop.API.Models.Enums;
 
@@ -44,10 +45,24 @@ namespace shahbashop.API.Data
             return category;
         }
 
-        public async Task<IEnumerable<Product>> GetProducts()
+        public async Task<PagedList<Product>> GetProducts(UserParams userParams)
         {
-            var products = await _dataContext.Products.Include(x => x.Category).Include(x => x.Images).ToListAsync();
-            return products;
+            var products = _dataContext.Products.Include(x => x.Category).Include(x => x.Images).AsQueryable();
+            if (userParams.CategoryId != Guid.Empty)
+            {
+                products = products.Where(p => p.Category.Id == userParams.CategoryId);
+            }
+
+            if (userParams.MaxPrice > 1)
+            {
+                products = products.Where(p => p.Price <= userParams.MaxPrice);
+            }
+            
+            if (userParams.MinPrice > 1)
+            {
+                products = products.Where(p => p.Price >= userParams.MinPrice);
+            }
+            return await PagedList<Product>.CreatAsync(products, userParams.PageNumber, 10);
         }
 
         public async Task<IEnumerable<Product>> GetProductsPerCategory(Guid categoryId)

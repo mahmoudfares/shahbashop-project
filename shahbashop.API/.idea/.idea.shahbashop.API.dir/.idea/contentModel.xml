@@ -24,6 +24,9 @@
       <e p="Helpers" t="Include">
         <e p="CloudinarySettings.cs" t="Include" />
         <e p="Extensions.cs" t="Include" />
+        <e p="PagedList.cs" t="Include" />
+        <e p="PaginationHeader.cs" t="Include" />
+        <e p="UserParams.cs" t="Include" />
       </e>
       <e p="Jsons" t="Include">
         <e p="Requests" t="Include">
@@ -47,6 +50,8 @@
         <e p="20200123180303_ImageUpdates.Designer.cs" t="Include" />
         <e p="20200125134314_AddedPropetiesToProduct.cs" t="Include" />
         <e p="20200125134314_AddedPropetiesToProduct.Designer.cs" t="Include" />
+        <e p="20200226164146_priceDecimelInsteadOfString.cs" t="Include" />
+        <e p="20200226164146_priceDecimelInsteadOfString.Designer.cs" t="Include" />
         <e p="DataContextModelSnapshot.cs" t="Include" />
       </e>
       <e p="Models" t="Include">

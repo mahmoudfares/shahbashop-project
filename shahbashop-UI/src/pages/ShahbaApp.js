@@ -10,12 +10,18 @@ import { store } from 'react-notifications-component';
 import {options} from "../helpers/notificationOptions";
 import {FaSadTear, FaSmile, FaInfoCircle} from "react-icons/fa";
 import compose from 'compose-function';
-import { withTranslation  } from 'react-i18next';
+import { withTranslation } from 'react-i18next';
+import ShahbaPagination from "../components/application/pagination/Pagination";
+import queryString from "query-string";
+
 
 export class ShahbaApp extends Component {
-
+  queryParams; 
   componentDidMount() {
-    this.props.fetchProducts();
+    this.queryParams = queryString.parse(this.props.location.search);
+
+
+    this.props.fetchProducts(this.queryParams);
     this.props.getCategoriesAction();
     this.addAmountIfNeeded();
   }
@@ -72,18 +78,21 @@ export class ShahbaApp extends Component {
             <div key={product.id}  className="col-lg-3 col-md-4 col-sm-6 product-container">
               <Product remove={this.removeFromShoppingCart} add={this.addToShoppingCart} skipMaxLimit={this.skipMaxLimit} product={product}>
               </Product>
-            </div>)}
-            </div>
+              </div>)}
+        </div>
+        <ShahbaPagination queryParams={this.queryParams}/>
       </div>
     );
   }
 }
 
-const mapStateToProps = (state) => ({
-  products: state.products,
+const mapStateToProps = (state) => (
+  {
+  products: state.products.products,
   categories: state.categories,
   shoppingCart: state.shoppingCart,
-});
+  }
+);
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({fetchProducts, getCategoriesAction, addItem, deleteItem}, dispatch);
 

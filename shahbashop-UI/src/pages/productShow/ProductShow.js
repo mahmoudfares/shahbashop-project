@@ -126,7 +126,7 @@ class ProductShow extends Component{
                     </div>
                     <div>
                         See more of: 
-                        <NavLink to={`/category/${product.category.id}/products`}>{product.category.name}</NavLink>
+                        <NavLink to={`/search?categoryId=${product.category.id}`}>{product.category.name}</NavLink>
                     </div>
                 </div>
             </>

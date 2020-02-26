@@ -10,7 +10,7 @@ import ChangLanguageModal from "./components/application/changeLanguageModal/Cha
 import ShoppingCart from "./pages/shoppingCart/ShoppingCart";
 import ReactNotification from 'react-notifications-component';
 import ProductShow from "./pages/productShow/ProductShow";
-import CategoryProducts from "./pages/categoryProducts/CategoryProducts";
+import Search from "./pages/search/Search";
 
 axios.defaults.baseURL = process.env.REACT_APP_BASE_URL;
 
@@ -26,7 +26,7 @@ function App() {
             <Route exact path="/" component={ShahbaApp} />
             <Route path="/products/:id" component={ProductShow} />
             <Route path="/shopping-cart" component={ShoppingCart} />
-            <Route path="/category/:id/products" component={CategoryProducts} />
+            <Route path="/search" component={Search} />
             <Route path="/admin">
               <AdminApp></AdminApp>
             </Route>
