@@ -81,7 +81,7 @@ export class CategoryProducts extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  products: state.products,
+  products: state.products.products,
   categories: state.categories,
   shoppingCart: state.shoppingCart,
 });

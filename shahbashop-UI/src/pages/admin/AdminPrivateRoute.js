@@ -1,23 +1,15 @@
 import React from "react";
 import { Redirect, Route } from "react-router-dom";
-import { checkToken } from "../../utils/cookies";
+import { userIsAdmin } from "../../utils/cookies";
 
-const AdminPrivateRoute = ({ component: Component, ...rest }) => (
-  <Route
-    {...rest}
-    render={props =>
-      checkToken() !== null ? (
-        <Component {...props} />
-      ) : (
-        <Redirect
-          to={{
-            pathname: "/admin",
-            state: { from: props.location }
-          }}
-        />
-      )
-    }
-  />
-);
+const AdminPrivateRoute = ({ component: Component, ...rest }) => {
+  return(
+       <Route {...rest} render={(props) => (
+        userIsAdmin()
+        ? <Component {...props} />
+        : <Redirect to="/login" />
+        )}>
+        </Route >
+)};
 
 export default AdminPrivateRoute;

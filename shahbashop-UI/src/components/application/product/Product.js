@@ -45,7 +45,7 @@ const Product = (props) => {
     <div className={choseTypeClass()}>
         <div className="image-container ">
                 <NavLink to={`/products/${product.id}`}>
-                    {mainImage? <img alt={mainImage.id} src={mainImage.url}></img> : ""}
+                    <img alt={mainImage?.id} src={mainImage?.url}></img>
             </NavLink>
         </div>
         <div className="product-information">

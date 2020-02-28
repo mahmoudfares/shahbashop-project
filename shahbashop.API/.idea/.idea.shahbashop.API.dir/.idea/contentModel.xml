@@ -19,6 +19,7 @@
         <e p="DataContext.cs" t="Include" />
         <e p="IAuthRepository.cs" t="Include" />
         <e p="IShahbaShopRepository.cs" t="Include" />
+        <e p="Seed.cs" t="Include" />
         <e p="ShahbaShopRepository.cs" t="Include" />
       </e>
       <e p="Helpers" t="Include">
@@ -44,14 +45,8 @@
         </e>
       </e>
       <e p="Migrations" t="Include">
-        <e p="20200122193541_initilMigrations.cs" t="Include" />
-        <e p="20200122193541_initilMigrations.Designer.cs" t="Include" />
-        <e p="20200123180303_ImageUpdates.cs" t="Include" />
-        <e p="20200123180303_ImageUpdates.Designer.cs" t="Include" />
-        <e p="20200125134314_AddedPropetiesToProduct.cs" t="Include" />
-        <e p="20200125134314_AddedPropetiesToProduct.Designer.cs" t="Include" />
-        <e p="20200226164146_priceDecimelInsteadOfString.cs" t="Include" />
-        <e p="20200226164146_priceDecimelInsteadOfString.Designer.cs" t="Include" />
+        <e p="20200227200153_initialMigration.cs" t="Include" />
+        <e p="20200227200153_initialMigration.Designer.cs" t="Include" />
         <e p="DataContextModelSnapshot.cs" t="Include" />
       </e>
       <e p="Models" t="Include">
@@ -66,7 +61,9 @@
         <e p="Image.cs" t="Include" />
         <e p="Order.cs" t="Include" />
         <e p="Product.cs" t="Include" />
+        <e p="Role.cs" t="Include" />
         <e p="User.cs" t="Include" />
+        <e p="UserRole.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive">
         <e p="Debug" t="Include">

@@ -1,7 +1,7 @@
 import React, {Suspense} from "react";
 import "./App.css";
 import { Switch, Route } from "react-router-dom";
-import AdminApp from "./pages/admin/AdminApp";
+import AdminPrivateRoute from "./pages/admin/AdminPrivateRoute";
 import axios from "axios";
 import ShahbaApp from "./pages/ShahbaApp";
 import './main.scss';
@@ -11,6 +11,8 @@ import ShoppingCart from "./pages/shoppingCart/ShoppingCart";
 import ReactNotification from 'react-notifications-component';
 import ProductShow from "./pages/productShow/ProductShow";
 import Search from "./pages/search/Search";
+import Login from "./pages/login/Login";
+import AdminDashboard from "./pages/admin/AdminDashboard";
 
 axios.defaults.baseURL = process.env.REACT_APP_BASE_URL;
 
@@ -27,9 +29,8 @@ function App() {
             <Route path="/products/:id" component={ProductShow} />
             <Route path="/shopping-cart" component={ShoppingCart} />
             <Route path="/search" component={Search} />
-            <Route path="/admin">
-              <AdminApp></AdminApp>
-            </Route>
+            <Route path="/login" component={Login} />
+            <AdminPrivateRoute component={AdminDashboard} />
           </Switch>
         </div>
         </div>

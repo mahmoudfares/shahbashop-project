@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using CloudinaryDotNet;
 using CloudinaryDotNet.Actions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using shahbashop.API.Data;
@@ -15,6 +16,8 @@ namespace shahbashop.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Policy = "RequireAdminRole")]
+    
     public class ImagesController: ControllerBase
     {
         private readonly IOptions<CloudinarySettings> _cloudinaryConfig;
@@ -28,7 +31,6 @@ namespace shahbashop.API.Controllers
             Account acc = new Account(_cloudinaryConfig.Value.CloudName, _cloudinaryConfig.Value.ApiKey, _cloudinaryConfig.Value.ApiSecret);
             _cloudinary = new Cloudinary(acc);
         }
-
         [HttpPost("{productId}")]
         public async Task<IActionResult> AddImage(Guid productId,  [FromForm]ProductImageRequest request)
         {
@@ -66,7 +68,8 @@ namespace shahbashop.API.Controllers
             
             return CreatedAtAction(nameof(GetImage), new {id = image.Id}, imageToReturn);
         }
-
+        
+        [AllowAnonymous]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetImage(Guid id)
         {
@@ -79,8 +82,10 @@ namespace shahbashop.API.Controllers
             
             return Ok(image);
         }
-
+        
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> Delete(Guid id)
         {
             var image = await _repository.GetImage(id);
@@ -102,7 +107,7 @@ namespace shahbashop.API.Controllers
 
             return BadRequest("failed to delete the image");
         }
-
+        
         [HttpPut("{id}/products/{productId}")]
         public async Task<IActionResult> SetMain(Guid id, Guid productId)
         {

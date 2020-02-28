@@ -19,8 +19,8 @@ namespace shahbashop.API.Data
             byte[] passwordHash, passwordSalt;
             CreatPassword(password, out passwordHash, out passwordSalt);
             
-            user.PasswordHash = passwordHash;
-            user.PassWordSalt = passwordSalt;
+            /*user.PasswordHash = passwordHash;
+            user.PassWordSalt = passwordSalt;*/
 
             await _dataContext.Users.AddAsync(user);
             await _dataContext.SaveChangesAsync();
@@ -45,7 +45,7 @@ namespace shahbashop.API.Data
             if (user == null)
                 return null;
 
-            return !VerifyPasswordHash(password, user.PasswordHash, user.PassWordSalt) ? null : user;
+            return user;
         }
 
         private bool VerifyPasswordHash(string password, byte[] passwordHash, byte[] passWordSalt)
