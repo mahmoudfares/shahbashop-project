@@ -17,7 +17,6 @@ const PaginationItems = (props) => {
 
 const ShahbaPagination = (props) => {
   
-  console.log(props.queryParams)
   const { pagination } = props;
   return (
     pagination.TotalPages > 1 ?

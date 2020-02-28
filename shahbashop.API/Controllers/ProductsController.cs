@@ -15,6 +15,7 @@ namespace shahbashop.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [AllowAnonymous]
     public class ProductsController: ControllerBase
     {
         private readonly IShahbaShopRepository _repository;
