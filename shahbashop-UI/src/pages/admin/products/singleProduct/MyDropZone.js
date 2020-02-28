@@ -14,6 +14,7 @@ export default function MyDropzone(props) {
   ));
   
   const handleSubmit = e => {
+    console.log(e);
     e.preventDefault();
     if(acceptedFiles.length > 0){
       props.submit(acceptedFiles);

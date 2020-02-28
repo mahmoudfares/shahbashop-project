@@ -35,7 +35,6 @@ class Products extends Component {
   }
   
   render() {
-    const {products} = this.props;
     return (
     <>
       <div>
@@ -57,7 +56,7 @@ class Products extends Component {
           </tr>
         </thead>
         <tbody>
-          {products.map((product, index) => (<tr key={index + 1}>
+        {this.props.products.map((product, index) => (<tr key={index + 1}>
           <th scope="row">{index + 1}</th>
               <td>
               <NavLink to={`/admin/dashboard/products/${product.id}`}><FaEdit /></NavLink> 
@@ -78,7 +77,7 @@ class Products extends Component {
 }
 
 const mapStateToProps = state => ({
-  products: state.products,
+  products: state.products.products,
   categories: state.categories,
 });
 

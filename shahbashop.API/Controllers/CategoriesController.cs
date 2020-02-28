@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using shahbashop.API.Data;
@@ -14,6 +15,8 @@ namespace shahbashop.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [AllowAnonymous]
+
     public class CategoriesController: ControllerBase
     {
         private readonly IShahbaShopRepository _repository;
@@ -69,6 +72,7 @@ namespace shahbashop.API.Controllers
             return new CategoryResponse{ Id = child.Id, Name = child.Name, Type = child.Type};
         }
 
+        [Authorize(Policy = "RequireAdminRole")]
         [HttpPut("{id}")]
         public async Task<IActionResult> Put(Guid id,[FromBody]CategoryRequest request)
         {

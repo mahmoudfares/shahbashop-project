@@ -1,11 +1,13 @@
+import jwt from "jsonwebtoken";
+
 export function setToken(token) {
   localStorage.setItem("token", token);
 }
 
-export function checkToken() {
-  let user = localStorage.getItem("token");
-  if (user !== "") {
-    return user;
+export function checkUserToken() {
+  let userToken = localStorage.getItem("token");
+  if (userToken !== "") {
+    return userToken;
   }
     return null;
 }
@@ -21,5 +23,14 @@ export function checkAcceptedCookies(){
     return true;
   }
   
+  return false;
+}
+
+export function userIsAdmin() {
+  let userToken = checkUserToken();
+  if (userToken !== null) {
+    let token = jwt.decode(userToken);
+    return token.role?.includes("Admin") ? true : false;
+  }
   return false;
 }

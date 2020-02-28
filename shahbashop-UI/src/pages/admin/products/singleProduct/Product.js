@@ -94,7 +94,6 @@ class Product extends Component{
         .then(res =>{
                 let newState = {...this.state};
                 newState.product.images = this.state.product.images.map(image => {return {...image, isMain: false}});
-                console.log(newState.product.images);
                 newState.product.images[this.currentIndex].isMain = true;
                 newState.product.images = this.setMainFirst(this.state.product.images);
                 newState.disableButtons = true;
