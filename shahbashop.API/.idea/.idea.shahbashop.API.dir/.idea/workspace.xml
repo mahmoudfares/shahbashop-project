@@ -2,33 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b66d1a22-747f-4a36-a3fa-2eb2b8927770" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Helpers/PagedList.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Helpers/PaginationHeader.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Helpers/UserParams.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shahbashop-UI/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../shahbashop-UI/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shahbashop-UI/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../shahbashop-UI/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shahbashop-UI/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../shahbashop-UI/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shahbashop-UI/src/actions/productAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/../shahbashop-UI/src/actions/productAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shahbashop-UI/src/components/application/product/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/../shahbashop-UI/src/components/application/product/Product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shahbashop-UI/src/pages/ShahbaApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/../shahbashop-UI/src/pages/ShahbaApp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shahbashop-UI/src/pages/categoryProducts/CategoryProducts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shahbashop-UI/src/pages/categoryProducts/categoryProducts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shahbashop-UI/src/pages/productShow/ProductShow.js" beforeDir="false" afterPath="$PROJECT_DIR$/../shahbashop-UI/src/pages/productShow/ProductShow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shahbashop-UI/src/reducers/product-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../shahbashop-UI/src/reducers/product-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shahbashop-UI/src/services/productServices.js" beforeDir="false" afterPath="$PROJECT_DIR$/../shahbashop-UI/src/services/productServices.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.shahbashop.API.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.shahbashop.API.dir/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.shahbashop.API.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.shahbashop.API.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/ProductsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/ProductsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/IShahbaShopRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/IShahbaShopRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/ShahbaShopRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/ShahbaShopRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Helpers/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Helpers/Extensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JSONS/Requests/ProductRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JSONS/Requests/ProductRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Migrations/DataContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Migrations/DataContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Product.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/shahbashop.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/shahbashop.API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/shahbashop.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/shahbashop.API.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/shahbashop.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/shahbashop.API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/shahbashop.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/shahbashop.API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/shahbashop.API.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/shahbashop.API.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +13,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/obj/Debug/netcoreapp2.2/shahbashop.API.AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/FC7C73A1-B1D4-4035-B4E5-FADC40DEAB92/194/Task.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/FC7C73A1-B1D4-4035-B4E5-FADC40DEAB92/195/TaskContinuation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2254925F-A632-4F31-B1D5-B3D82A28CAEE/1D/UserManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/FC7C73A1-B1D4-4035-B4E5-FADC40DEAB92/30C/AsyncMethodBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/FC7C73A1-B1D4-4035-B4E5-FADC40DEAB92/184/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0366DF96-A306-4DFB-8E8E-8F21BCA68142/20/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
@@ -63,6 +39,7 @@
     <setting file="file://$PROJECT_DIR$/Controllers/AuthController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Controllers/ImagesController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/57669C9E-8E81-4772-B5A4-B54046C7B220/7/WebHostExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Helpers/CloudinarySettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/Address.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Helpers/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
@@ -89,6 +66,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/221FA654-76FD-4A6A-A7BE-C2CD9B5A08D9/1/ConfigurationExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/57139BFC-E1DA-4913-8884-2BBBF31D74D3/195/TaskContinuation.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5BEF0119-3538-44C0-B65A-C60D6E1DCCFE/3/IdentityUser.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
