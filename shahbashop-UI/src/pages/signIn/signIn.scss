@@ -1,0 +1,56 @@
+.login{
+    .login-form{
+        margin: 50px auto;
+        border: 2px solid gray;
+        padding: 10px;
+        border-radius: 25px;
+        
+        .title{
+            margin-top: 30px;
+        }
+        
+        .logo{
+            display: block;
+            position: absolute;
+            width: 80px;
+            right: calc(50% - (80px / 2));
+            top: -40px;
+        }
+
+        .btn-warning{
+            color: black !important;
+            font-weight: bold;
+        }
+
+        input[type=email], input[type=password]{
+            border-radius: 0px;
+            border: none;
+            border-bottom: 1px solid #ced4da !important ;
+            outline: none !important;
+            box-shadow: none;
+        }
+
+        .input-border{
+            position: absolute;
+            width: 0%;
+            height: 5px;
+            background-color: #fdc513;
+            left: 0;
+            bottom: -2px;
+            transition: all .4s;
+        }
+
+        input[type=password]:focus ~ .input-border{
+            width: 100%;
+        }
+
+        input[type=email]:focus ~ .input-border{
+            width: 100%;
+        }
+
+        .form-control:focus{
+            border: none !important;
+        } 
+    }
+    
+}

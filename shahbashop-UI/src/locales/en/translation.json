@@ -4,7 +4,12 @@
         "policyAccordText": "We use cookies to improve our services. By clicking on accord button, you agree to save this information within your device"
     },
     "shared": {
-        "accord": "Accord"
+        "accord": "Accord",
+        "email": "Email",
+        "password": "Password",
+        "enterEmail": "Enter you'r email address",
+        "enterPassword": "Enter password",
+        "reWritePassword": "Rewrite password"
     },
     "navbar": {
         "home": "Home"
@@ -14,6 +19,16 @@
         "amount": "amount",
         "items": "item(s)",
         "order": "Order",
-        "totalPrice": "المجموع الكلي"
+        "totalPrice": "Total price"
+    },
+    "signup":{
+        "name": "Sign up",
+        "welcomeText": "Welcome in Shahbashop",
+        "alreadyCustomer": "I have already an account and i want to sign in"
+    },
+    "signin":{
+        "name": "Sign in",
+        "welcomeText": "Welcome back, we missed you!",
+        "notCustomerYet": "I have no account yet, i want to sign up!"
     }
 }

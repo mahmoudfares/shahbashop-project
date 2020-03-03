@@ -11,8 +11,9 @@ import ShoppingCart from "./pages/shoppingCart/ShoppingCart";
 import ReactNotification from 'react-notifications-component';
 import ProductShow from "./pages/productShow/ProductShow";
 import Search from "./pages/search/Search";
-import Login from "./pages/login/Login";
+import SignIn from "./pages/signIn/SignIn";
 import AdminDashboard from "./pages/admin/AdminDashboard";
+import SignUp from "./pages/signUp/SignUp";
 
 axios.defaults.baseURL = process.env.REACT_APP_BASE_URL;
 
@@ -20,19 +21,21 @@ function App() {
   return (
     <Suspense fallback="loading">
         <ReactNotification />
-        <Navbar></Navbar>
         <ChangLanguageModal></ChangLanguageModal>
-        <div className="container-fluid">
-        <div className="row">
-          <Switch>
-            <Route exact path="/" component={ShahbaApp} />
-            <Route path="/products/:id" component={ProductShow} />
-            <Route path="/shopping-cart" component={ShoppingCart} />
-            <Route path="/search" component={Search} />
-            <Route path="/login" component={Login} />
-            <AdminPrivateRoute component={AdminDashboard} />
-          </Switch>
-        </div>
+        <Navbar/>
+      <div className="container-fluid">
+          <div className="row app-container">
+            <Switch>
+              <Route exact path="/" component={ShahbaApp} />
+              <Route path="/products/:id" component={ProductShow} />
+              <Route path="/shopping-cart" component={ShoppingCart} />
+              <Route path="/search" component={Search} />
+              <Route path="/signIn" component={SignIn} />
+              <Route path="/signup" component={SignUp} />
+            <AdminPrivateRoute path="/admin" component={AdminDashboard} />
+            <Route render={(props)=>(<h1>not found</h1>)} />
+            </Switch>
+          </div>
         </div>
       </Suspense>
   );

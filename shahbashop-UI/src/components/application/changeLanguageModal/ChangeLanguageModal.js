@@ -3,7 +3,8 @@ import { Button, Modal, ModalBody, ModalFooter } from 'reactstrap';
 import "./changeLanguageModal.scss";
 import { useTranslation } from "react-i18next";
 import { setAcceptedCookies, checkAcceptedCookies} from "../../../utils/cookies";
-import i18n from "../../../i18n"
+import i18n from "../../../i18n";
+
 
 const ChangeLanguageModal = (props) => {
   const {
@@ -52,7 +53,6 @@ const ChangeLanguageModal = (props) => {
 
   const { t } = useTranslation();
   return (
-    <div>
       <Modal backdrop="static" isOpen={modal} toggle={accord} className={className}>
         <ModalBody>
           <ul className="list-group list-languages">
@@ -74,7 +74,6 @@ const ChangeLanguageModal = (props) => {
           <Button color="primary" onClick={accord}>{t("shared.accord")}</Button>
         </ModalFooter>
       </Modal>
-    </div>
   );
 }
 

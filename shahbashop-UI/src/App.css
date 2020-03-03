@@ -1,7 +1,3 @@
-.container-fluid{
-    margin-top: 10px;
-}
-
 .notification-icon{
     font-size: 20px;
 }
@@ -19,4 +15,8 @@
 
 .notification-info:before{
     content: "" !important;
+}
+
+.app-container{
+    min-height: calc(100vh - 60px);
 }

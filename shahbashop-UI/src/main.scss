@@ -1,7 +1,8 @@
 $theme-colors: (
   "danger": #ff3547 ,
   "primary": #4285F4,
-  "success": #00C851
+  "success": #00C851,
+  "warning": #fdc513,
 );
 
 @import '~bootstrap/scss/bootstrap.scss';
