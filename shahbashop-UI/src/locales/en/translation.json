@@ -9,7 +9,8 @@
         "password": "Password",
         "enterEmail": "Enter you'r email address",
         "enterPassword": "Enter password",
-        "reWritePassword": "Rewrite password"
+        "reWritePassword": "Rewrite password",
+        "passwordConfirmation": "password confirmation"
     },
     "navbar": {
         "home": "Home"
@@ -30,5 +31,12 @@
         "name": "Sign in",
         "welcomeText": "Welcome back, we missed you!",
         "notCustomerYet": "I have no account yet, i want to sign up!"
+    },
+    "errors":{
+        "required": "is required",
+        "notValid": "is not valid",
+        "tooShort": "is too short",
+        "passwordAllowedCharacters": "must at least contain one character or one number",
+        "passwordNotMatch":"doesn't match the password"
     }
 }

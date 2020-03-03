@@ -10,6 +10,7 @@
     "bootstrap": "^4.4.1",
     "compose-function": "^3.0.3",
     "env-cmd": "^10.0.1",
+    "formik": "^2.1.4",
     "i18next": "^19.1.0",
     "i18next-browser-languagedetector": "^4.0.1",
     "i18next-xhr-backend": "^3.2.2",
@@ -31,7 +32,8 @@
     "react-scripts": "3.3.0",
     "reactstrap": "^8.4.0",
     "redux": "^4.0.5",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "yup": "^0.28.1"
   },
   "scripts": {
     "start": "react-scripts start",
